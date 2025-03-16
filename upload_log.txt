@@ -1,0 +1,3 @@
+[2025-03-16 15:35:06] 🚀 Starting GitHub upload automation...
+[2025-03-16 15:35:07] ✅ Repository '5G_RAN_Test_Automation' already exists. Proceeding with upload.
+[2025-03-16 15:35:09] ✅ Updated environment variable: GITHUB_REPO=5G_RAN_Test_Automation
