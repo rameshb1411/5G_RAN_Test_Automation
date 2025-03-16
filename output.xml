@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-16T15:07:36.670714" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Suite" source="C:\Users\Ramesh1\PycharmProjects\PythonProject2\5G_RAN_Test_Project\test_suite.robot">
+<test id="s1-t1" name="Test MIB Broadcasting" line="14">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:07:36.812846" level="INFO">Starting process:
+python gnb_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:07:36.839056" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:07:51.928353" level="INFO">Process did not complete in 15 seconds.</msg>
+<msg time="2025-03-16T15:07:51.928522" level="INFO">Gracefully terminating process.</msg>
+<msg time="2025-03-16T15:07:52.037011" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:07:52.037364" level="INFO">${result} = &lt;result object with rc 3221225786&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>gnb_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:07:36.811654" elapsed="15.225752"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:07:52.039087" level="INFO">[15:07:36.980] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:36.980] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:36.982] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:36.982] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:36.996] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:36.998] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.008] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.010] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.021] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.023] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.035] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.036] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.044] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:37.044] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.046] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:37.046] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.057] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.059] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.070] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.072] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.083] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.084] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.095] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.096] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.108] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:37.108] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.110] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:37.110] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.121] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.122] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:37.134] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:07:52.038184" elapsed="0.001025"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>${EXPECTED_MIB}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:07:52.039391" elapsed="0.000712"/>
+</kw>
+<status status="PASS" start="2025-03-16T15:07:36.810261" elapsed="15.230037"/>
+</test>
+<test id="s1-t2" name="Test SIB1 Broadcasting" line="19">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:07:52.041512" level="INFO">Starting process:
+python gnb_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:07:52.050983" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:08:07.118936" level="INFO">Process did not complete in 15 seconds.</msg>
+<msg time="2025-03-16T15:08:07.119111" level="INFO">Gracefully terminating process.</msg>
+<msg time="2025-03-16T15:08:07.221109" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:08:07.221550" level="INFO">${result} = &lt;result object with rc 3221225786&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>gnb_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:07:52.041171" elapsed="15.180545"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:08:07.223286" level="INFO">[15:07:52.290] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.290] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.292] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.292] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.303] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.305] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.315] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.317] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.327] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.329] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.340] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.342] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.353] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.353] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.354] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.354] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.366] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.368] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.378] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.379] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.390] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.392] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.403] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.405] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.416] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.416] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.417] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:07:52.417] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.429] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.430] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:07:52.441] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:08:07.222165" elapsed="0.002108"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>${EXPECTED_SIB1}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:07.224472" elapsed="0.000916"/>
+</kw>
+<status status="PASS" start="2025-03-16T15:07:52.040624" elapsed="15.185039"/>
+</test>
+<test id="s1-t3" name="Test All SIBs Broadcast Confirmation" line="24">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:08:07.226714" level="INFO">Starting process:
+python gnb_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:08:07.238119" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:08:22.304550" level="INFO">Process did not complete in 15 seconds.</msg>
+<msg time="2025-03-16T15:08:22.304655" level="INFO">Gracefully terminating process.</msg>
+<msg time="2025-03-16T15:08:22.406075" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:08:22.406328" level="INFO">${result} = &lt;result object with rc 3221225786&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>gnb_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:08:07.226460" elapsed="15.179920"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:08:22.407445" level="INFO">[15:08:07.350] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.350] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.352] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.352] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.362] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.364] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.375] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.377] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.389] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.390] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.401] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.403] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.414] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.414] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.415] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.416] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.427] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.429] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.440] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.441] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.452] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.454] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.465] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.466] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.477] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.478] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.479] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.479] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.492] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.493] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.504] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:08:22.406824" elapsed="0.000845"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2025-03-16T15:08:22.408778" level="FAIL">'[15:08:07.350] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.350] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.352] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.352] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.362] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.364] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.375] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.377] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.389] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.390] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.401] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.403] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.414] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.414] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.415] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.416] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.427] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.429] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.440] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.441] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.452] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.454] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.465] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.466] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.477] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.478] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.479] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.479] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.492] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.493] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.504] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled' does not contain 'ALL_SIBS_BROADCASTED'</msg>
+<arg>${result.stdout}</arg>
+<arg>${EXPECTED_ALL_SIBS}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2025-03-16T15:08:22.407899" elapsed="0.001282">'[15:08:07.350] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.350] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.352] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.352] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.362] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.364] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.375] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.377] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.389] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.390] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+    [ Message content over the limit has been removed. ]
+...PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.465] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.466] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.477] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.478] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.479] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.479] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.492] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.493] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.504] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled' does not contain 'ALL_SIBS_BROADCASTED'</status>
+</kw>
+<status status="FAIL" start="2025-03-16T15:08:07.226010" elapsed="15.183404">'[15:08:07.350] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.350] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.352] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.352] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.362] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.364] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.375] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.377] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.389] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.390] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+    [ Message content over the limit has been removed. ]
+...PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.465] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.466] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.477] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.478] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.479] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:07.479] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.492] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.493] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:07.504] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled' does not contain 'ALL_SIBS_BROADCASTED'</status>
+</test>
+<test id="s1-t4" name="Test MIB and SIB Periodicity" line="29">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:08:22.410188" level="INFO">Starting process:
+python gnb_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:08:22.419236" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:08:37.469203" level="INFO">Process did not complete in 15 seconds.</msg>
+<msg time="2025-03-16T15:08:37.469613" level="INFO">Gracefully terminating process.</msg>
+<msg time="2025-03-16T15:08:37.571238" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:08:37.571659" level="INFO">${result} = &lt;result object with rc 3221225786&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>gnb_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:08:22.410021" elapsed="15.161718"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:08:37.573293" level="INFO">[15:08:22.537] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.537] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.538] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.538] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.550] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.551] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.563] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.565] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.577] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.578] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.590] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.592] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.603] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.603] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.605] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.605] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.616] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.618] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.630] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.632] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.643] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.645] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.655] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.657] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.669] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.669] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.670] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:22.670] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.680] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.682] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:22.692] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:08:37.572102" elapsed="0.001519"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-16T15:08:37.576028" level="INFO">${mib_count} = 6</msg>
+<var>${mib_count}</var>
+<arg>len(re.findall("Broadcasting MIB", '''${result.stdout}'''))</arg>
+<arg>modules=re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-16T15:08:37.573975" elapsed="0.002107"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-16T15:08:37.577417" level="INFO">${sib1_count} = 25</msg>
+<var>${sib1_count}</var>
+<arg>len(re.findall("Broadcasting SIB1", '''${result.stdout}'''))</arg>
+<arg>modules=re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-16T15:08:37.576298" elapsed="0.001167"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:08:37.577897" level="INFO">MIB count: 6, SIB1 count: 25</msg>
+<arg>MIB count: ${mib_count}, SIB1 count: ${sib1_count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:08:37.577656" elapsed="0.000322"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<msg time="2025-03-16T15:08:37.578588" level="FAIL">'6 &gt;= 100' should be true.</msg>
+<arg>${mib_count} &gt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="FAIL" start="2025-03-16T15:08:37.578127" elapsed="0.000617">'6 &gt;= 100' should be true.</status>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${sib1_count} &gt;= 100</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2025-03-16T15:08:37.578940" elapsed="0.000032"/>
+</kw>
+<status status="FAIL" start="2025-03-16T15:08:22.409665" elapsed="15.169525">'6 &gt;= 100' should be true.</status>
+</test>
+<test id="s1-t5" name="Test Log Capture with Timestamps" line="38">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:08:37.580686" level="INFO">Starting process:
+python gnb_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:08:37.589663" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:08:52.649349" level="INFO">Process did not complete in 15 seconds.</msg>
+<msg time="2025-03-16T15:08:52.649486" level="INFO">Gracefully terminating process.</msg>
+<msg time="2025-03-16T15:08:52.751041" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:08:52.751283" level="INFO">${result} = &lt;result object with rc 3221225786&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>gnb_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:08:37.580343" elapsed="15.170985"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:08:52.752313" level="INFO">[15:08:37.717] [gNB] SFN=0: Broadcasting MIB... -&gt; SFN=0 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.717] [gNB] SFN=0: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.718] [gNB] SFN=1: Broadcasting MIB... -&gt; SFN=1 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.718] [gNB] SFN=1: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.728] [gNB] SFN=8: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.730] [gNB] SFN=9: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.741] [gNB] SFN=16: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.743] [gNB] SFN=17: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.754] [gNB] SFN=24: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.755] [gNB] SFN=25: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.767] [gNB] SFN=32: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.768] [gNB] SFN=33: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.780] [gNB] SFN=40: Broadcasting MIB... -&gt; SFN=40 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.780] [gNB] SFN=40: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.782] [gNB] SFN=41: Broadcasting MIB... -&gt; SFN=41 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.782] [gNB] SFN=41: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.792] [gNB] SFN=48: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.794] [gNB] SFN=49: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.803] [gNB] SFN=56: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.805] [gNB] SFN=57: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.816] [gNB] SFN=64: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.817] [gNB] SFN=65: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.826] [gNB] SFN=72: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.827] [gNB] SFN=73: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.838] [gNB] SFN=80: Broadcasting MIB... -&gt; SFN=80 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.838] [gNB] SFN=80: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.839] [gNB] SFN=81: Broadcasting MIB... -&gt; SFN=81 | SCS=scs30or120 | Offset=8 | DMRS=pos2 | PDCCH=32 | CellBarred=notBarred
+[15:08:37.839] [gNB] SFN=81: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.849] [gNB] SFN=88: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.851] [gNB] SFN=89: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:37.862] [gNB] SFN=96: Broadcasting SIB1... -&gt; PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.751529" elapsed="0.000887"/>
+</kw>
+<kw name="Should Match Regexp" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>${TIMESTAMP_REGEX}</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.752663" elapsed="0.001245"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>scs30or120</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.754202" elapsed="0.000862"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>Offset=8</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.755319" elapsed="0.000961"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>DMRS=pos2</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.756531" elapsed="0.000565"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>PDCCH=32</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.757270" elapsed="0.000658"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>CellBarred=notBarred</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.758161" elapsed="0.000969"/>
+</kw>
+<status status="PASS" start="2025-03-16T15:08:37.579716" elapsed="15.179725"/>
+</test>
+<test id="s1-t6" name="Test UE Decoding" line="48">
+<kw name="Run Process" owner="Process">
+<msg time="2025-03-16T15:08:52.761079" level="INFO">Starting process:
+python ue_simulator.py --duration 10</msg>
+<msg time="2025-03-16T15:08:52.782025" level="INFO">Waiting for process to complete.</msg>
+<msg time="2025-03-16T15:09:03.024837" level="INFO">Process completed.</msg>
+<msg time="2025-03-16T15:09:03.025273" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>python</arg>
+<arg>ue_simulator.py</arg>
+<arg>--duration</arg>
+<arg>10</arg>
+<arg>shell=True</arg>
+<arg>timeout=15</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2025-03-16T15:08:52.760525" elapsed="10.264799"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-16T15:09:03.026711" level="INFO">[15:08:52.919] [UE] Decoded MIB: SFN=..., SCS=scs30or120, Offset=8, DMRS=pos2, PDCCH=32, CellBarred=notBarred
+[15:08:52.919] [UE] Decoded SIB: PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:54.919] [UE] Decoded MIB: SFN=..., SCS=scs30or120, Offset=8, DMRS=pos2, PDCCH=32, CellBarred=notBarred
+[15:08:54.920] [UE] Decoded SIB: PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:56.920] [UE] Decoded MIB: SFN=..., SCS=scs30or120, Offset=8, DMRS=pos2, PDCCH=32, CellBarred=notBarred
+[15:08:56.920] [UE] Decoded SIB: PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:08:58.921] [UE] Decoded MIB: SFN=..., SCS=scs30or120, Offset=8, DMRS=pos2, PDCCH=32, CellBarred=notBarred
+[15:08:58.921] [UE] Decoded SIB: PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled
+[15:09:00.921] [UE] Decoded MIB: SFN=..., SCS=scs30or120, Offset=8, DMRS=pos2, PDCCH=32, CellBarred=notBarred
+[15:09:00.921] [UE] Decoded SIB: PLMN=00101, CellBarred=notBarred, Reserved=notReserved, OnDemandSI=disabled</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-16T15:09:03.025579" elapsed="0.001244"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>${EXPECTED_UE_DECODE_MIB}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:09:03.027269" elapsed="0.000863"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${result.stdout}</arg>
+<arg>${EXPECTED_UE_DECODE_SIB}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-03-16T15:09:03.028286" elapsed="0.000648"/>
+</kw>
+<status status="PASS" start="2025-03-16T15:08:52.759927" elapsed="10.269179"/>
+</test>
+<status status="FAIL" start="2025-03-16T15:07:36.675667" elapsed="86.354074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Suite" id="s1" pass="4" fail="2" skip="0">Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

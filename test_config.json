@@ -1,0 +1,17 @@
+{
+    "MIB": {
+        "systemFrameNumber": [100],
+        "subCarrierSpacingCommon": ["scs30or120"],
+        "ssbSubcarrierOffset": [8],
+        "dmrsTypeAPosition": ["pos2"],
+        "pdcchConfigSIB1": [32],
+        "cellBarred": ["notBarred"],
+        "intraFreqReselection": ["allowed"]
+    },
+    "SIB1": {
+        "PLMN": ["00101"],
+        "CellBarred": ["notBarred"],
+        "ReservedForOperator": ["notReserved"],
+        "OnDemandSI": ["disabled"]
+    }
+}
